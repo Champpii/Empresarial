@@ -3,17 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - Capacitación Empresarial</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            text-align: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+        nav a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        h1 {
+            color: #1e3a8a;
+            margin-top: 25px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .info-box {
+            background-color: #eff6ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .info-box p {
+            margin: 8px 0;
+        }
+        input, textarea, button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
 </head>
-<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px;">
-    <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="cursos.html">Cursos</a> |
-        <a href="contactos.html">Contacto</a>
-    </nav>
-    <hr>
-    <h1>Contáctanos</h1>
-    <p>Correo: info@empresa.com</p>
-    <p>Teléfono: +123 456 7890</p>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="cursos.html">Cursos</a> |
+            <a href="contactos.html">Contacto</a>
+        </nav>
+        <h1>Ponte en Contacto</h1>
+        <p>¿Tienes dudas sobre los cursos o inscripciones? Escríbenos y te responderemos.</p>
+
+        <div class="info-box">
+            <p><strong>Correo electrónico:</strong> universidad@umg.com</p>
+            <p><strong>Teléfono:</strong> +502 444-2341</p>
+            <p><strong>Horario de atención:</strong> Lunes a Viernes de 8:00 a 18:00</p>
+            <p><strong>Ubicación:</strong> Antigua Guatemala</p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea rows="3" placeholder="Tu mensaje"></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
 </body>
 </html>
