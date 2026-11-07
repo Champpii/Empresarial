@@ -3,20 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
+    <title>Cursos - Capacitación Empresarial</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            text-align: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+        nav a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+        h1 {
+            color: #1e3a8a;
+            margin-top: 25px;
+        }
+        h2 {
+            color: #1d4ed8;
+            font-size: 1.15rem;
+            margin: 10px 0 5px;
+        }
+        p {
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+        .card {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .badge {
+            display: inline-block;
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-top: 6px;
+        }
+    </style>
 </head>
-<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px;">
-    <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="cursos.html">Cursos</a> |
-        <a href="contactos.html">Contacto</a>
-    </nav>
-    <hr>
-    <h1>Nuestros Cursos</h1>
-    <ul>
-        <li>Desarrollo Web</li>
-        <li>Gestión Empresarial</li>
-        <li>Marketing Digital</li>
-    </ul>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="cursos.html">Cursos</a> |
+            <a href="contactos.html">Contacto</a>
+        </nav>
+        <h1>Catálogo de Cursos</h1>
+        <p>Aprende las habilidades más demandadas con cursos flexibles y tutorías personalizadas.</p>
+
+        <div class="card">
+            <h2>Desarrollo Web Full Stack</h2>
+            <p>HTML5, CSS3, JavaScript, bases de datos y creación de aplicaciones modernas.</p>
+            <span class="badge">Duración: 12 semanas </span>
+        </div>
+
+        <div class="card">
+            <h2>Gestión y Liderazgo Empresarial</h2>
+            <p>Estrategias de gestión de proyectos, comunicación efectiva y dirección de equipos.</p>
+            <span class="badge">Duración: 6 semanas</span>
+        </div>
+
+        <div class="card">
+            <h2>Marketing Digital y Redes</h2>
+            <p>Publicidad en redes sociales y analisis de datos.</p>
+            <span class="badge">Duración: 8 semanas</span>
+        </div>
+    </div>
 </body>
 </html>
